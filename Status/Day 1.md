@@ -13,35 +13,15 @@
 
 ---
 
-**Main author's Solution: Python 2**
+**My solution using python 3**
 
 ```python
-l=[]
-for i in range(2000, 3201):
-    if (i%7==0) and (i%5!=0):
-        l.append(str(i))
+for number in range(2000, 3201):
+    if number % 7 == 0 and number % 5 != 0:
+        print(number, end=",")
 
-print ','.join(l)
 ```
 
----
-
-**My Solution: Python 3**
-- **Using for loops**
-
-```python
-for i in range(2000,3201):
-    if i%7 == 0 and i%5!=0:
-        print(i,end=',')
-print("\b")
-```
-
----
-- **Using generators and list comprehension**
-
-```python
-print(*(i for i in range(2000, 3201) if i%7 == 0 and i%5 != 0), sep=",")
-```
 # Question 2
 
 ### **Question:**
